@@ -6,29 +6,23 @@ class Solution
 public:
     string gcdOfStrings(string str1, string str2)
     {
-        string result = "";
+        // If concatenating in both orders gives different results, no GCD string exists
+        if (str1 + str2 != str2 + str1)
+            return "";
 
-        char *ch1 = &str1[0];
-        char *ch2 = &str2[0];
-
-        while (*ch1 && *ch2)
+        // Helper function to compute GCD of two numbers
+        auto gcd = [](int a, int b)
         {
-            if (*ch1 == *ch2 && result.find(*ch1) == string::npos)
+            while (b)
             {
-                result += *ch1;
-                ch1++;
-                ch2++;
+                int temp = b;
+                b = a % b;
+                a = temp;
             }
-            else
-            {
-                if (!result.empty())
-                {
-                    while (*ch1)
-                        if (*ch1)
-                }
-                break;
-            }
-        }
-        return result;
+            return a;
+        };
+
+        int len = gcd(str1.size(), str2.size());
+        return str1.substr(0, len);
     }
 };
