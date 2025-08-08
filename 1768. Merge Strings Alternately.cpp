@@ -1,19 +1,24 @@
 #include <string>
 using namespace std;
 
-
-class Solution {
+class Solution
+{
 public:
-    string mergeAlternately(string word1, string word2) {
-        char *ch1 = &word1[0];
-        char *ch2 = &word2[0];
+    string mergeAlternately(string word1, string word2)
+    {
+        int i = 0, j = 0;
         string result = "";
-        while ((*ch1) != '\0' || (*ch2) != '\0') {
-            if (*ch1) {
-                result += *ch1++;
+
+        // Append characters alternately from word1 and word2
+        while (i < word1.size() || j < word2.size())
+        {
+            if (i < word1.size())
+            {
+                result += word1[i++];
             }
-            if (*ch2) {
-                result += *ch2++;
+            if (j < word2.size())
+            {
+                result += word2[j++];
             }
         }
         return result;
