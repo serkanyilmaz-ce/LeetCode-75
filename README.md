@@ -1,6 +1,7 @@
 # LeetCode-75
 
 This repository contains my solutions and notes for the [**LeetCode 75**](https://leetcode.com/studyplan/leetcode-75/) study plan.
+<br />
 File names follow the format `ID. Title.ext`.
 
 ## Build & Run
@@ -25,3 +26,5 @@ g++ -std=c++17 -O2 -Wall -Wextra -pedantic "1768. Merge Strings Alternately.cpp"
 - Feel free to open PRs or issues.
 - Keep the file naming format and note structure.
 - If you submit an alternative solution, include time and space complexity analysis.
+
+_Auto-generated on 2025-08-15 20:48:31 UTC_
