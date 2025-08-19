@@ -2,12 +2,6 @@
 
 using namespace std;
 
-/**
- * @brief Solution class for LeetCode 605: Can Place Flowers.
- *
- * This class provides a method to determine if n new flowers can be planted in a flowerbed
- * without violating the rule that no two flowers can be adjacent.
- */
 class Solution
 {
 public:
