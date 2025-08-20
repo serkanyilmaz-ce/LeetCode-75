@@ -2,3 +2,5 @@
 # Ignore Visual Studio Code settings and workspace files
 .vscode/
 generate.py
+generate2.py
+generate3.py
