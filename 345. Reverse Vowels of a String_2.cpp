@@ -7,7 +7,7 @@ class Solution
 {
 public:
     /**
-     * Reverses only the vowels in the input string.
+     * @brief Reverses only the vowels in the input string.
      * @param s The input string to process.
      * @return A new string with the vowels reversed.
      */
@@ -33,7 +33,7 @@ public:
 
 private:
     /**
-     * Checks if a character is a vowel (case-insensitive).
+     * @brief Checks if a character is a vowel (case-insensitive).
      * @param c The character to check.
      * @return True if c is a vowel, false otherwise.
      */
@@ -43,3 +43,9 @@ private:
                c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U';
     }
 };
+
+/*
+ * Complexity
+ * - Time Complexity: O(n)
+ * - Space Complexity: O(1) (in-place)
+ */
